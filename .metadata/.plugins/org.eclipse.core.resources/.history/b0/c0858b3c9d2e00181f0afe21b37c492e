@@ -1,0 +1,21 @@
+package com.test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		A a = new B();
+		System.out.println(a.staticMember);
+		
+		B b  = new B();
+		System.out.println(b.staticMember);
+
+	}
+}
+
+class A {
+	public static int staticMember;
+}
+
+class B extends A{
+	public static int staticMember;
+}

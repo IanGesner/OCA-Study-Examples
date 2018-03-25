@@ -1,0 +1,23 @@
+package com.defaultvalues;
+
+public class Main {
+
+	int j;
+
+	public static void main(String[] args) {
+		Defaults d = new Defaults();
+		d.method();
+
+		// System.out.println(j);
+		// System.out.println(i);
+	}
+
+}
+
+class Defaults {
+	int memberInt;
+	
+	public void method() {
+		System.out.println(memberInt);
+	}
+}

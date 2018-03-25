@@ -1,0 +1,32 @@
+package com.defaultvalues;
+
+public class Main {
+
+	int j;
+
+	public static void main(String[] args) {
+		Defaults d = new Defaults();
+		d.printMemberInt();
+		d.printMemberIntArray();
+
+		// System.out.println(j);
+		// System.out.println(i);
+	}
+
+}
+
+class Defaults {
+	int memberInt;
+	int[] memberIntArray = new int[5];
+	String[] memberStrArray = new String[5];
+	
+	public void printMemberInt() {
+		System.out.println(memberInt);
+	}
+	
+	public void printMemberIntArray() {
+		for (int i : memberIntArray) {
+			System.out.println(i);
+		}
+	}
+}

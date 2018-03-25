@@ -1,0 +1,31 @@
+package com.scratchpad;
+
+public class ScratchPad1 {
+	A a = new A();
+}
+
+class A {
+	protected int lowAccess;
+	public int highAccess;
+	
+	protected void lowAccessMethod() {}
+	public void highAccessMethod() {}
+}
+
+class B extends A {
+	
+	static final private int lowAccess = 1;
+
+	@Override
+	public void lowAccessMethod() {
+		// TODO Auto-generated method stub
+		super.lowAccessMethod();
+	}
+
+	@Override
+	public void highAccessMethod() {
+		// TODO Auto-generated method stub
+		super.highAccessMethod();
+	}
+	
+}

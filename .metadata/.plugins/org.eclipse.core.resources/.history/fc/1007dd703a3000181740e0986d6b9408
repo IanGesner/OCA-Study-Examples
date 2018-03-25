@@ -1,0 +1,17 @@
+package com.unreachablecode.tryfinally;
+
+public class Main {
+public static void main(String[] args) {
+	method();
+}
+	
+	public int method() {
+		try {
+			return 1;
+		} finally {
+			System.out.println("Finally");
+		}
+	}
+
+}
+

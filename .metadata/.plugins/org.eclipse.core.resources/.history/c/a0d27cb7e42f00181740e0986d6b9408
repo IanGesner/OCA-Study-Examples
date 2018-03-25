@@ -1,0 +1,25 @@
+package com.overriding;
+
+public class InitializationOrder {
+	
+	public static void main(String[] args) {
+		for (;;) {
+			System.out.println("Hello");
+		}
+	}
+
+}
+
+class A {
+	
+	static int staticInt = 3;
+	
+	static {
+		staticInt = 4;
+	}
+}
+
+
+class B {
+	
+}

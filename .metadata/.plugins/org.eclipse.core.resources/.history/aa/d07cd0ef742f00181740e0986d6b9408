@@ -1,0 +1,26 @@
+package com.exceptions;
+
+public class Overriding {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class A {
+	protected void method() throws Exception {
+		throw new RuntimeException(); 	// Even though it throws a runtime
+										// exception, must be checked in caller
+										// because it declares a checked exception
+	}
+}
+
+class B extends A {
+
+	@Override
+	protected void method() {
+		//super.method();
+	}
+
+}

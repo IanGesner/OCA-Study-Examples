@@ -1,0 +1,15 @@
+package com.localdatetime;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		LocalTime time = LocalTime.now();
+		LocalDate isoDate = LocalDate.now();
+		
+		System.out.println(isoDate);
+	}
+
+}

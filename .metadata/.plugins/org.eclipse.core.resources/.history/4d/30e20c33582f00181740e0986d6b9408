@@ -1,0 +1,27 @@
+package com.exceptions;
+
+class ExceptionTest {
+	public void method() throws Exception {
+		throw new Exception();
+	}
+}
+
+class RuntimeExceptionTest{
+	public void method() {
+		throw new RuntimeException();
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		try {
+			new RuntimeExceptionTest().method();
+		} finally {} // try-finally is okay for runtime exceptions
+		
+		try {
+			new RuntimeExceptionTest().method();
+		} catch (Exception e) {} // try-finally is okay for runtime exceptions
+	}
+
+}

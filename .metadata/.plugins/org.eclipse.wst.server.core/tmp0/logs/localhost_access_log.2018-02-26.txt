@@ -1,0 +1,17 @@
+127.0.0.1 - - [26/Feb/2018:16:01:51 -0500] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:01:52 -0500] "GET /VillainsOnly/ HTTP/1.1" 404 1090
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:03:31 -0500] "OPTIONS /VillainsOnly/loginUser.app HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:03:32 -0500] "POST /VillainsOnly/loginUser.app HTTP/1.1" 200 49
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:03:32 -0500] "OPTIONS /VillainsOnly/getUserByEmail.app HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:03:32 -0500] "POST /VillainsOnly/getUserByEmail.app HTTP/1.1" 500 10532
+127.0.0.1 - - [26/Feb/2018:16:22:13 -0500] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:22:14 -0500] "GET /VillainsOnly/WEB-INF/classes/com/villains/service/UserServiceImpl.java HTTP/1.1" 404 1046
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:22:43 -0500] "OPTIONS /VillainsOnly/loginUser.app HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:39:40 -0500] "OPTIONS /VillainsOnly/requestPasswordReset.app HTTP/1.1" 404 1046
+127.0.0.1 - - [26/Feb/2018:16:41:39 -0500] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:41:39 -0500] "GET /VillainsOnly/WEB-INF/classes/com/villains/controller/UserController.java HTTP/1.1" 404 1046
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:42:33 -0500] "OPTIONS /VillainsOnly/requestPasswordReset.app HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:43:22 -0500] "OPTIONS /VillainsOnly/requestPasswordReset.app HTTP/1.1" 200 -
+127.0.0.1 - - [26/Feb/2018:16:44:06 -0500] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:44:06 -0500] "GET /VillainsOnly/WEB-INF/classes/com/villains/controller/UserController.java HTTP/1.1" 404 1046
+0:0:0:0:0:0:0:1 - - [26/Feb/2018:16:44:21 -0500] "OPTIONS /VillainsOnly/requestPasswordReset.app HTTP/1.1" 200 -

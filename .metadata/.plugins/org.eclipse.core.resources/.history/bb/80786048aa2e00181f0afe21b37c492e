@@ -1,0 +1,35 @@
+package com.overriding;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+interface A {
+	String str = "A"; 
+	
+	static void A() {
+		System.out.println("A");
+	}
+	
+	//static void printStr(); - must have body - can't override a static
+	//static String str; - not allowed without inline initialization
+	//static {} - not allowed
+}
+
+interface B extends A {
+	void A();
+}
+
+class C implements B {
+
+	@Override
+	public void A() {
+		System.out.println("C");
+		
+	}
+	
+}

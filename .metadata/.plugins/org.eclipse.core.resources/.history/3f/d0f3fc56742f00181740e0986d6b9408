@@ -1,0 +1,24 @@
+package com.exceptions;
+
+public class Overriding {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class A {
+	protected void method() throws Exception {
+		throw new Exception();
+	}
+}
+
+class B extends A {
+
+	@Override
+	protected void method() {
+
+	}
+
+}

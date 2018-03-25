@@ -1,0 +1,55 @@
+package com.overriding;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+interface A {
+	String str = "A"; 
+	
+	static void A() {
+		System.out.println("A");
+	}
+	void B();
+	
+	//static void printStr(); - must have body - can't override a static
+	//static String str; - not allowed without inline initialization
+	//static {} - not allowed
+}
+
+interface B extends A {
+	default void A() {
+		System.out.println("B");
+	}
+}
+
+class C implements B {
+
+	protected static int x;
+	
+	@Override
+	public void A() {
+		System.out.println("C");
+		
+	}
+
+	@Override
+	public void B() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class D extends C {
+	protected int x;
+}
+
+// Static methods must always have bodies because they can't be overriden
+
+
+// You cannot hide an instance meth

@@ -1,0 +1,20 @@
+package com.test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Integer int1 = new Integer(3);
+		Integer int2 = int1;
+
+		int1++;
+		int1--; // ++ and -- create new object
+		
+		System.out.println(int2 == int1);
+		System.out.println(int2.equals(int1));
+		
+		
+		// You String.valueOf(Wrapper)
+		// but you Wrapper.parseWrapper(String)
+	}
+
+}

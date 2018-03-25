@@ -1,0 +1,40 @@
+package com.test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Integer int1 = new Integer(3);
+		Integer int2 = int1;
+
+		int1++;
+		int1--; // ++ and -- create new object
+		
+		System.out.println(int2 == int1);
+		System.out.println(int2.equals(int1));
+		
+		int primInt = 3;
+		
+		System.out.println(int2 == primInt);
+		System.out.println(int2.equals(primInt));
+		
+		long primLong = 3;
+		
+		System.out.println(int2 == primLong);
+		System.out.println(int2.equals(primLong));
+		
+		short primShort = 3;
+		
+		System.out.println(int2 == primShort);
+		System.out.println(int2.equals(primShort));
+		
+		byte primByte = 2;
+		
+		System.out.println(int2 == primByte);
+		System.out.println(int2.equals(primByte));
+		
+		
+		// You String.valueOf(Wrapper)
+		// but you Wrapper.parseWrapper(String)
+	}
+
+}
